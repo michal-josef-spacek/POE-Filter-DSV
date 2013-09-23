@@ -1,5 +1,5 @@
 ---
-abstract: 'Barfing content to output file.'
+abstract: 'A POE-based parser for DSV based files.'
 author:
   - 'Michal Špaček <skim@cpan.org>'
 build_requires:
@@ -26,9 +26,8 @@ no_index:
     - t
 requires:
   Error::Pure: 0.11
-  Exporter: 0
-  Readonly: 0
-  Scalar::Util: 0
+  POE::Filter: 0
+  Text::DSV: 0.05
   perl: 5.6.2
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=POE-Filter-DSV

@@ -6,14 +6,13 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'Barfing content to output file.';
+abstract 'A POE-based parser for DSV based files.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'POE-Filter-DSV';
 requires 'Error::Pure' => 0.11;
-requires 'Exporter' => 0;
-requires 'Readonly' => 0;
-requires 'Scalar::Util' => 0;
+requires 'POE::Filter' => 0;
+requires 'Text::DSV' => 0.05;
 requires 'perl' => '5.6.2';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=POE-Filter-DSV';
